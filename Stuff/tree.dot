@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="OverallQual <= 7.5\nmse = 6018575467.91\nsamples = 1022\nvalue = 181312.693", fillcolor="#e5813917"] ;
+1 [label="OverallQual <= 6.5\nmse = 2430655728.75\nsamples = 859\nvalue = 158758.746", fillcolor="#e581390e"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="GrLivArea <= 1378.5\nmse = 1470182793.5\nsamples = 629\nvalue = 141325.952", fillcolor="#e5813907"] ;
+1 -> 2 ;
+3 [label="mse = 832745994.976\nsamples = 384\nvalue = 125364.594", fillcolor="#e5813900"] ;
+2 -> 3 ;
+4 [label="mse = 1444112705.26\nsamples = 245\nvalue = 166342.939", fillcolor="#e5813911"] ;
+2 -> 4 ;
+5 [label="GrLivArea <= 2020.0\nmse = 1953337430.22\nsamples = 230\nvalue = 206433.648", fillcolor="#e5813921"] ;
+1 -> 5 ;
+6 [label="mse = 1129808568.43\nsamples = 183\nvalue = 194022.672", fillcolor="#e581391c"] ;
+5 -> 6 ;
+7 [label="mse = 2224931585.16\nsamples = 47\nvalue = 254757.234", fillcolor="#e5813935"] ;
+5 -> 7 ;
+8 [label="2ndFlrSF <= 1564.5\nmse = 8118773459.67\nsamples = 163\nvalue = 300170.607", fillcolor="#e5813948"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="BsmtQual=Ex <= 0.5\nmse = 5981662364.81\nsamples = 160\nvalue = 293873.806", fillcolor="#e5813945"] ;
+8 -> 9 ;
+10 [label="mse = 3310013925.11\nsamples = 97\nvalue = 262663.711", fillcolor="#e5813939"] ;
+9 -> 10 ;
+11 [label="mse = 6286242067.04\nsamples = 63\nvalue = 341927.444", fillcolor="#e5813959"] ;
+9 -> 11 ;
+12 [label="MasVnrArea <= 301.5\nmse = 7202000000.0\nsamples = 3\nvalue = 636000.0", fillcolor="#e58139d2"] ;
+8 -> 12 ;
+13 [label="mse = 0.0\nsamples = 1\nvalue = 745000.0", fillcolor="#e58139ff"] ;
+12 -> 13 ;
+14 [label="mse = 1892250000.0\nsamples = 2\nvalue = 581500.0", fillcolor="#e58139bc"] ;
+12 -> 14 ;
+}
